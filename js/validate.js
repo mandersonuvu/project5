@@ -64,6 +64,7 @@ var states = [
 function validateState() {
   let el = document.getElementById("state");
   let error = document.getElementById("stateError");
+  document.getElementById("state").value = el.value.toUpperCase();
   if (states.includes(el.value)) {
     el.style.border = "2px solid black";
     error.style.display = "none";
