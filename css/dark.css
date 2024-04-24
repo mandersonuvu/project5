@@ -1,0 +1,46 @@
+/* dark theme
+ * 
+ * change default background color to dark color
+ * change default font color to light color
+ * change other secondary colors to match theme
+ * change font to Iosevka Aile Web
+ */
+
+:root {
+  --blue: #005EA6;
+  --dark: #121212;
+  --lightdark: #212121;
+  --offwhite: #F2E3BC;
+}
+
+@font-face {
+  font-family: "Iosevka Aile Web";
+  src: url(IosevkaAile-Regular.woff2);
+}
+
+* {
+  font-family: "Iosevka Aile Web", sans-serif;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--offwhite);
+}
+
+header {
+  background-color: var(--lightdark);
+}
+
+.banner {
+  background-color: var(--blue);
+}
+
+#theme_button:after {
+  border-top-color: white;
+  border-right-color: white;
+}
+
+article img,
+figure img {
+  border: 2px solid var(--blue);
+}
