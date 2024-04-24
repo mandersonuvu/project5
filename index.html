@@ -1,0 +1,249 @@
+<!--
+--SELF GRADE--
+REFACTOR JS                   A
+VALIDATION LIBRARY            A
+FLEXBOX LAYOUT/FORM HTML      A
+
+--EXTRA CREDIT COMPLETED--
+FORM MOBILE RESPONSIVE (3pts) YES
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Origami</title>
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+  <header>
+    <img src="android-chrome-192x192.png" class="logo" alt="origami star logo">
+    <h1 id="main_link">Origami Guides</h1>
+    <nav>
+      <a id="intro_link">Intro</a>
+      <a id="guides_link">Guides</a>
+      <a id="paper_link">Paper</a>
+      <a id="log_visit_link">Log Visit</a>
+    </nav>
+    <button id="theme_button"></button>
+  </header>
+
+  <main>
+    <article id="main_page">
+      <section class="banner">
+        <h1>Origami</h1>
+        <search>
+          <input type="search" placeholder="Search for instructions" name="search">
+        </search>
+      </section>
+      <section class="content_section">
+        <h2>Examples:</h2>
+        <div class="origrid">
+          <figure>
+            <img src="img/crown.png">
+            <figcaption>Crown</figcaption>
+          </figure>
+          <figure>
+            <img src="img/butterfly.png">
+            <figcaption>Butterfly</figcaption>
+          </figure>
+          <figure>
+            <img src="img/star.png">
+            <figcaption>Star</figcaption>
+          </figure>
+          <figure>
+            <img src="img/cat.png">
+            <figcaption>Cat</figcaption>
+          </figure>
+          <figure>
+            <img src="img/bat.png">
+            <figcaption>Bat</figcaption>
+          </figure>
+          <figure>
+            <img src="img/fox.png">
+            <figcaption>Fox</figcaption>
+          </figure>
+          <figure>
+            <img src="img/heart.png">
+            <figcaption>Heart</figcaption>
+          </figure>
+          <figure>
+            <img src="img/box.png">
+            <figcaption>Box</figcaption>
+          </figure>
+        </div>
+      </section>
+    </article>
+
+    <article id="intro" class="content_section">
+      <h1>Introduction to Origami</h1>
+      <div class="intro_content">
+        <p>
+          Origami, Japanese for "paper folding", is the art of tranforming a square sheet of paper into a sculpture of
+          another object through various folding techniques. If the paper is cut or glue is used, the method is refered
+          to as kirigami. Origami refers to both the practice and the finished product. Folds are usually accomplished
+          with any combination of one's fingers, a flat surface such as a table, and special creasing tools made out of
+          bone.
+        </p>
+        <img src="img/intro.png">
+      </div>
+    </article>
+
+    <article id="guide" class="content_section">
+      <h1>How to fold an origami butterfly</h1>
+      <div class="guide_video">
+        <iframe width="420" height="500" src="https://youtube.com/embed/GaGw4WSt8fo?fs=0"></iframe>
+      </div>
+    </article>
+
+    <article id="paper_types" class="content_section">
+      <h1>Types of Paper</h1>
+      <h2>Printer Paper</h2>
+      <div class="paper_type">
+        <img src="img/printer.jpg">
+        <div>
+          <h3>Pros</h3>
+          <ul>
+            <li>widely available</li>
+            <li>thin and easy to fold</li>
+          </ul>
+          <br>
+          <h3>Cons</h3>
+          <ul>
+            <li>low quality</li>
+            <li>rectangular</li>
+          </ul>
+        </div>
+      </div>
+      <h2>Cardstock</h2>
+      <div class="paper_type">
+        <img src="img/cardstock.jpg">
+        <div>
+          <h3>Pros</h3>
+          <ul>
+            <li>strong material</li>
+            <li>nice texture</li>
+          </ul>
+          <br>
+          <h3>Cons</h3>
+          <ul>
+            <li>thick and stiff paper is harder to fold</li>
+            <li>not always a square</li>
+          </ul>
+        </div>
+      </div>
+      <h2>Sticky Notes</h2>
+      <div class="paper_type">
+        <img src="img/sticky.jpg">
+        <div>
+          <h3>Pros</h3>
+          <ul>
+            <li>widely available</li>
+            <li>already a square</li>
+            <li>can be stuck to a flat surface to make initial folds easier</li>
+          </ul>
+          <br>
+          <h3>Cons</h3>
+          <ul>
+            <li>the sticky parts can get in the way of folding sometimes</li>
+          </ul>
+        </div>
+      </div>
+      <h2>Origami Paper</h2>
+      <div class="paper_type">
+        <img src="img/origami.jpg">
+        <div>
+          <h3>Pros</h3>
+          <ul>
+            <li>high quality</li>
+            <li>already a square</li>
+            <li>colorful</li>
+          </ul>
+          <br>
+          <h3>Cons</h3>
+          <ul>
+            <li>more expensive</li>
+            <li>less common</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article id="log_visit" class="content_section">
+      <h1>Log Visit</h1>
+      <form id="visit_form" novalidate method="GET" action="https://wp.zybooks.com/form-viewer.php">
+        <ul>
+          <li>
+            <input type="text" id="first_name" name="first_name" placeholder="First Name">
+          </li>
+          <li>
+            <input type="text" id="last_name" name="last_name" placeholder="Last Name">
+          </li>
+          <li>
+            <input type="text" id="address" name="address" placeholder="Address">
+          </li>
+          <li>
+            <input type="text" id="city" name="city" placeholder="City">
+          </li>
+          <li>
+            <input type="text" id="state" name="state" placeholder="State">
+            <div class="error" id="stateError">Not a valid state.</div>
+          </li>
+          <li>
+            <input type="text" id="zip" name="zip" placeholder="Zip">
+            <div class="error" id="zipError">Not a valid zip code.</div>
+          </li>
+          <li>
+            <input type="text" id="email" name="email" placeholder="Email">
+            <div class="error" id="emailError">Not a valid email address.</div>
+          </li>
+          <li>
+            <input type="text" id="phone" name="phone" placeholder="Phone">
+            <div class="error" id="phoneError">Not a valid phone number.</div>
+          </li>
+          <li id="how_find_page">
+            How did you find my page?
+            <ul>
+              <li>
+                <input type="radio" id="google" name="find_page" value="google">
+                <label for="google">google</label>
+              </li>
+              <li>
+                <input type="radio" id="friend" name="find_page" value="friend">
+                <label for="friend">friend</label>
+              </li>
+              <li>
+                <input type="radio" id="other" name="find_page" value="other">
+                <label for="other">other</label>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <button type="submit">Submit</button>
+          </li>
+        </ul>
+      </form>
+      <p id="thank_you">
+        Thank you!
+      </p>
+    </article>
+  </main>
+
+  <footer>&copy; 2024 Maxwell Anderson</footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/validate.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
